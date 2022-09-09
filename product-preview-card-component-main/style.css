@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=DotGothic16&family=Fraunces:opsz@9..144&family=Lato:ital@1&family=Montserrat&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(30, 38%, 92%);
+}
+
+
+.product-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 400px;
+    height: 320px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+.product-full-description{
+    padding: 15px;
+}
+.product-full-description .prodcut-title{
+ color: hsl(228, 12%, 48%);
+ font-size: 10px;
+ font-weight: 400;
+ margin-bottom: 10px;
+ letter-spacing: 3px;
+}
+.product-full-description .product-name{
+    margin-bottom: 15px;
+    font-family: 'Fraunces', sans-serif;
+}
+.product-full-description .product-description{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-full-description .product-price{
+font-family: 'Fraunces',sans-serif;
+font-size: 25px;
+color: green;
+font-weight: 700; 
+/* margin-bottom: 5px; */
+}
+.product-full-description .product-price .product-price-promotion{
+color:  hsl(228, 12%, 48%);
+font-size: 10px;
+font-weight: 500;
+text-decoration-line: line-through;
+padding-left: 20px;
+}
+
+
+.prodcut-purchase-btn{
+    position: absolute;
+    left: 57%;
+    top:  85%;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin-top: 5px;
+    background-color: hsla(158, 36%, 37%, 0.9);
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+}
+.product-icon-cart{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    z-index: 9;
+
+}
+
+.prodcut-purchase-btn:hover{
+    background-color: rgb(32, 78, 61);
+    cursor: pointer;
+}
+@media  screen and (max-width: 375px) {
+      .product-container{
+      height: 450px;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      border-radius: 20px;
+      }
+      .product-img{
+        height: 150px;
+        width: 300px;
+        border-radius: 5px;
+        position: absolute;
+      }
+      .product-full-description{
+        position: absolute;
+        top: 40%;
+      }
+      .prodcut-purchase-btn{
+      position: absolute;
+      top: 95%;
+      left: 20%;
+      padding: 10px 70px;
+      }
+      .product-icon-cart{
+        position: absolute;
+        top: 103%;
+        left: 30%;
+      }
+}
